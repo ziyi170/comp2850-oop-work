@@ -7,6 +7,17 @@ import io.kotest.matchers.shouldBe
 import io.kotest.matchers.shouldNotBe
 import io.kotest.matchers.string.shouldHaveLength
 
+/**
+ * Comprehensive test suite for Wordle game functions.
+ *
+ * Test coverage:
+ * 4. isValid: 9 tests (edge cases, special characters, case sensitivity)
+ * 3. readWordList: 4 tests (file reading, formatting, validation)
+ * 2. pickRandomWord: 6 tests (randomness, edge cases, removal)
+ * 1. evaluateGuess: 12 tests (exact matches, wrong positions, duplicates)
+ *
+ * Total: 31 test cases.
+ */
 class WordleTest : FunSpec({
 
     // Tests for isValid function

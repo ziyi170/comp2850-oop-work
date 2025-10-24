@@ -1,11 +1,27 @@
 import java.io.FileNotFoundException
 import java.io.IOException
 
+// game configuration constants
 const val MAX_ATTEMPTS = 6
 const val WORD_FILE = "data/words.txt"
 private const val SEPARATOR_LENGTH = 40
 private const val SINGLE_ATTEMPT = 1
 
+/**
+ * Main entry point for the game.
+ *
+ * Game flow:
+ * 1. Display welcome message and instructions
+ * 2. Load word list from data file
+ * 3. Select random target word
+ * 4. Process up to 6 player guesses
+ * 5. Display colored feedback for each guess
+ * 6. Show final win/loss message
+ *
+ * Error handling:
+ * 1. FileNotFoundException: Word file not found
+ * 2. IOException: Unable to read word file
+ */
 fun main() {
     println("=".repeat(SEPARATOR_LENGTH))
     println("         WELCOME TO WORDLE")
